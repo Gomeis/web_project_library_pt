@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Triple Peaks</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Logotipo da Biblioteca Triple Peaks"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#staff" class="nav__link">Escolhas do Leitor</a>
+            </li>
+            <li>
+              <a class="nav__link">Eventos</a>
+            </li>
+            <li>
+              <a class="nav__link">Seja um membro</a>
+            </li>
+            <li>
+              <a class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">Bem-vindo à Biblioteca Triple Peaks</h1>
+            <p class="header__description">
+              Temos o prazer de abrir as portas da nossa biblioteca a todos!
+              Venha expandir seus conhecimentos de desenvolvimento, ou apenas
+              use esse belo local para trabalhar ou estudar. Esse é um lugar
+              legal para estudantes legais!
+            </p>
+          </div>
+          <img
+            src="./images/inside_the_library.png"
+            alt="Ilustração 'Dentro da biblioteca'"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section id="staff" class="staff">
+          <h2 class="staff__title">Escolhas do Leitor</h2>
+          <p class="staff__subtitle">Que nossos leitores adoram</p>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">A Hora da Estrela</h3>
+                <p class="card__text">
+                  Conta a história de Macabéa, uma jovem nordestina que vive no
+                  anonimato em Rio de Janeiro. A narrativa explora sua solidão,
+                  ingenuidade e pequenas alegrias em meio a um mundo
+                  indiferente. O livro é uma reflexão sobre identidade, pobreza
+                  e a condição humana, mostrando como uma vida simples pode
+                  carregar profundidade emocional. Misturando sensibilidade
+                  poética e crítica social.
+                </p>
+                <p class="card__footer">Clarice Lispector</p>
+              </div>
+            </li>
+
+            <li class="card card2">
+              <div class="card__content">
+                <h3 class="card__title">A Intucionista</h3>
+                <p class="card__text">
+                  O livro se passa em uma cidade de arranha-céus e outros
+                  edifícios que dependem de transporte vertical, como
+                  elevadores. A época, nunca explicitamente identificada, é
+                  marcada por tensões raciais, quando pessoas negras ainda eram
+                  chamadas de "de cor" e a integração racial era um tema atual.
+                  A protagonista, Lila Mae Watson, é uma inspetora da escola
+                  "Intuicionista", que avalia elevadores andando e intuindo seu
+                  estado, ao contrário dos "Empiristas", que seguem métodos
+                  tradicionais baseados em instrumentos. A obra aborda temas
+                  como progresso, perfeição, ética e preconceito, mostrando como
+                  escolhas individuais podem impactar sistemas maiores.
+                </p>
+                <button class="card__lermais">Ler mais</button>
+                <p class="card__footer">Colson Whitehead</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">Investigação Filosófica</h3>
+                <p class="card__text">
+                  Obra clássica da filosofia, na qual Wittgenstein questiona a
+                  relação entre linguagem, pensamento e realidade. Ele mostra
+                  como a forma como usamos palavras influencia nossa compreensão
+                  do mundo. Com análises detalhadas de conceitos e regras
+                  linguísticas, o livro é um guia para entender limites do
+                  pensamento, problemas filosóficos e como o significado depende
+                  do contexto. Essencial para quem se interessa por lógica,
+                  filosofia da linguagem e epistemologia.
+                </p>
+                <button class="card__lermais">Ler mais</button>
+                <p class="card__footer">Ludwig Wittgenstein</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">O Homem que Calculava</h3>
+                <p class="card__text">
+                  O livro acompanha Beremiz Samir, um matemático árabe famoso
+                  por resolver problemas complexos usando lógica, criatividade e
+                  raciocínio rápido. Cada capítulo apresenta desafios ou enigmas
+                  que ele resolve de forma engenhosa, ensinando matemática de
+                  maneira prática e envolvente. A narrativa mistura aventura,
+                  cultura árabe e lições de ética, mostrando como inteligência e
+                  criatividade podem ser aplicadas na vida cotidiana para
+                  resolver problemas e ajudar os outros.
+                </p>
+                <button class="card__lermais">Ler mais</button>
+                <p class="card__footer">Malba Tahan</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
